@@ -1,6 +1,6 @@
 import React from 'react';
-import PopupWithForm from './PopupWithForm';
-import { CurrentUserContext } from '../contexts/CurrentUserContext';
+import PopupWithForm from '../../../../src/components/PopupWithForm';
+import { CurrentUserContext } from '../../../../src/contexts/CurrentUserContext';
 
 function EditProfilePopup({ isOpen, onUpdateUser, onClose }) {
   const [name, setName] = React.useState('');
@@ -38,16 +38,16 @@ function EditProfilePopup({ isOpen, onUpdateUser, onClose }) {
     >
       <label className="popup__label">
         <input type="text" name="userName" id="owner-name"
-               className="popup__input popup__input_type_name" placeholder="Имя"
-               required minLength="2" maxLength="40" pattern="[a-zA-Zа-яА-Я -]{1,}"
-               value={name || ''} onChange={handleNameChange} />
+          className="popup__input popup__input_type_name" placeholder="Имя"
+          required minLength="2" maxLength="40" pattern="[a-zA-Zа-яА-Я -]{1,}"
+          value={name || ''} onChange={handleNameChange} />
         <span className="popup__error" id="owner-name-error"></span>
       </label>
       <label className="popup__label">
         <input type="text" name="userDescription" id="owner-description"
-               className="popup__input popup__input_type_description" placeholder="Занятие"
-               required minLength="2" maxLength="200"
-               value={description || ''} onChange={handleDescriptionChange} />
+          className="popup__input popup__input_type_description" placeholder="Занятие"
+          required minLength="2" maxLength="200"
+          value={description || ''} onChange={handleDescriptionChange} />
         <span className="popup__error" id="owner-description-error"></span>
       </label>
     </PopupWithForm>
