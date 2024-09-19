@@ -13,4 +13,4 @@
 
 
 Ссылка на задание разбивки монолита на микросервисы
-https://drive.google.com/file/d/15ycms_I_fw4HnrQXW_w9UZyfB7HbLuX9/view?usp=sharing
+https://drive.google.com/file/d/1CXTEFSDhzFQvTTiGjy9c2GSuGB-7f5Gb/view?usp=sharing
